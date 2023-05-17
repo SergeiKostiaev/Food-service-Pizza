@@ -12,6 +12,18 @@ let CartOpen2 = document.getElementById('cart2');
 const goBtn = document.getElementById('goBtn');
 const addToCart = document.getElementById('add_to_cart');
 
+const arr = [
+  {
+    name: 'Аррива!',
+    about: 'Острая чоризо, цыпленок, томаты, соус бургер, сладкий перец, красный лук, моцарелла, соус ранч, чеснок',
+    price: '350 руб.'
+  },
+  {
+    name: 'Аррива!',
+    about: 'Острая чоризо, цыпленок, томаты, соус бургер, сладкий перец, красный лук, моцарелла, соус ранч, чеснок',
+    price: '350 руб.'
+  },
+]
 
 
 function Start() {    
@@ -46,7 +58,7 @@ function addDnDHandlers() {
     let shoppingItems = document.getElementsByClassName('tab_shop');
     let shoppingCartDrop = document.getElementById('cart');
     let shoppingCart = document.querySelectorAll('#cart_bag ul')[0];
-    const add_btn_click = document.getElementById('add_to_cart');
+    const add_btn_click = document.getElementById('add_to_cart'); // неиспользуется
   
   //------------------------------------------------------------------------------------
     for(var i = 0; i < shoppingItems.length; i++) {
