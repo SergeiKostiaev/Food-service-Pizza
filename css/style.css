@@ -1,0 +1,325 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.welcome_box {
+    width: 50%;
+    height: 500px;
+    background: #ECEBEB;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.466);
+    border-radius: 66px;
+    padding: 24px;
+    display: block;
+    margin: 41px auto;
+    animation: fade 0.5s;
+}
+.content_welc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.content_welc>a {
+    margin-bottom: 65px;
+}
+.content_welc>.press_text {
+    color: #E85502;
+    font-weight: 700;
+    margin-bottom: 99px;
+    font-size: 18px;
+}
+.content_welc>input {
+    background: #E85502;
+    border-radius: 28px;
+    border: none;
+    padding: 22px 87px;
+    color: #ECEBEB;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+.content_welc>input:hover {
+    color: rgb(39, 39, 39);
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.466);
+    transition: all 0.5s;
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    50% {opacity: 50%;}
+    100% {opacity: 100%;}
+}
+.exit {
+    position: absolute;
+    right: 85px;
+    background: #ECEBEB;
+    border-radius: 50px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+/*Welcome box 2*/
+.welcome_box_shop {
+    display: none;
+    width: 77%;
+    background: #ECEBEB;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.466);
+    border-radius: 66px;
+    padding: 40px;
+    margin: 29px auto;
+    animation: fade 0.5s;
+}
+.welcome_box_shop {
+    display: none;
+    width: 77%;
+    background: #ECEBEB;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.466);
+    border-radius: 66px;
+    padding: 40px;
+    margin: 29px auto;
+    animation: fade 0.5s;
+}
+.container_shop {
+    position: relative;
+    flex: 1 0 auto;
+    width: calc(100% - 500px);
+    overflow: auto;
+}
+
+.header_cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+.cart {
+    position: relative;
+    cursor: pointer;
+}
+.cart:hover {
+    transform: scale(1.1);
+}
+.cart span {
+    position: relative;
+    top: -20px;
+    right: 20px;
+    background: #E85502;
+    color: #ECEBEB;
+    padding: 3.8px 7px;
+    border-radius: 20px;
+}
+.container_shop {
+    font-size: 18px;
+    font-weight: 700;
+}
+.content_welc_shop {
+    display: flex;
+    height: 800px;
+    width: 100%;
+}
+.tabs_shop {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 25px;
+}
+.tab_shop {
+    text-align: center;
+    width: calc(100% - 80%);
+    min-width: 157.64px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: space-between;
+}
+.tab_shop_slice {
+    text-align: center;
+    width: calc(100% - 80%);
+    min-width: 157.64px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: space-between;
+}
+.tab_shop_slice > p {
+    margin-bottom: 15px;
+}
+.tab_shop_slice > .title {
+    font-weight: 400;
+    font-size: 12px;
+}
+.tab_shop_slice img:hover {
+    transform: scale(1.011);
+}
+.tab_shop > p {
+    margin-bottom: 15px;
+}
+.tab_shop > .title {
+    font-weight: 400;
+    font-size: 12px;
+}
+.tab_shop img:hover {
+    transform: scale(1.011);
+}
+.price_shop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn_cart {
+    background: #E85502;
+    border-radius: 28px;
+    border: none;
+    padding: 5px 8px;
+    color: #ECEBEB;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn_cart:hover {
+    transition: all 0.5s;
+    color: black;
+}
+/*Cart page*/
+.cart_page {
+    display: none;
+}
+.header_cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+li {
+    list-style-type: none;
+}
+.cart_list {
+    display: flex;
+}
+.cart_list > ul {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#item-1-null {
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    background-color: rgba(232, 85, 2, 0.5);
+    padding: 15px;
+    border-radius: 20px;
+}
+#item-1-null > .namePizza {
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+#item-1-null > .price_shop > button {
+    display: none;
+}
+#item-1-null > .price_shop{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+#item-1-null > .price_shop > p{
+    margin-top: 15px;
+}
+#item-1-null > .price_shop > .price{
+    font-weight: 900;
+}
+.cart_bag {
+    width: 77%;
+    background: #ECEBEB;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.466);
+    border-radius: 66px;
+    padding: 40px;
+    margin: 29px auto;
+    animation: fade 0.5s;
+}
+/*Welcome box 3*/
+.welcome_box2 {
+    display: none;
+    width: 77%;
+    background: #ECEBEB;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.466);
+    border-radius: 66px;
+    padding: 40px;
+    margin: 29px auto;
+    animation: fade 0.5s;
+}
+.container_max {
+    display: flex;
+    height: 730px;
+    width: 100%;
+}
+.container {
+    position: relative;
+    flex: 1 0 auto;
+    width: calc(100% - 500px);
+    overflow: hidden;
+}
+.container p {
+    text-align: start;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: scroll;
+    height: 100%;
+}
+
+.tab {
+    margin-bottom: 15px;
+    padding: 5px;
+}
+.order {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-height: 100%;
+    padding: 30px;
+    border-radius: 0px 20px 20px 0px;
+    overflow: hidden;
+}
+.order img {
+    position: relative;
+    min-width: 200px;
+    height: 256px;
+    left: 8px;
+    top: 1px;
+}
+.part_pizza {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    overflow: hidden;
+}
+/*Constructor Pizza*/
+.header_construct {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
