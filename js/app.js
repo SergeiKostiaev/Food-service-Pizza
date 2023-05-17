@@ -12,6 +12,7 @@ let CartOpen2 = document.getElementById('cart2');
 const goBtn = document.getElementById('goBtn');
 const addToCart = document.getElementById('add_to_cart');
 
+//----------------Массивы----------------------------------------------------------------
 const arr = [
   {
     name: 'Аррива!',
@@ -25,7 +26,7 @@ const arr = [
   },
 ]
 
-
+//----------------Функции----------------------------------------------------------------
 function Start() {    
     box1.style.display="none";
     box2.style.display="block";
